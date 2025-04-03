@@ -1,0 +1,52 @@
+.container{
+    background-color: rgba(255, 255, 211, 1);
+    padding: 24px 0 24px 16px;
+}
+
+.text{
+    font-weight: 600;
+    color: rgba(45, 177, 0, 1);
+    font-size: 12px;
+    margin-left: 6px;
+    margin-right: 16px;
+}
+
+.hamburger{
+    margin: 10px 0 10px 24px;
+}
+
+.logoName{
+    margin-right: 128px;
+}
+
+@media(max-width: 768px) {
+    .container{
+        padding: 16px 36px 16px 20px;
+    }
+
+    .user{
+        display: none;
+    }
+
+    .breadcrumbs{
+        display: none;
+    }
+
+    .logoName{
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 360px) {
+    .container{
+        padding: 16px 0 16px 16px;
+    }
+
+    .logoName{
+        display: none;
+    }
+    
+    .hamburger{
+        margin: 10px 32px 10px 16px;
+    }
+}
