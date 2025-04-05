@@ -11,7 +11,7 @@ import styles from '~/components/HeaderComponent/header.module.scss';
 
 function Header() {
     return (
-        <header>
+        <header data-test-id='header'>
             <Flex justify='space-between' align='center' className={styles.container}>
                 <span>
                     <Wrap>
@@ -25,7 +25,7 @@ function Header() {
                         <WrapItem>
                             <Avatar
                                 size='md'
-                                bg='red.500'
+                                bg='gray.500'
                                 name='Екатерина Константинопольская'
                                 src={avatar}
                             />
