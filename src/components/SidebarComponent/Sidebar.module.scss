@@ -1,0 +1,24 @@
+.text{
+    font-weight: 600;
+    color: rgba(45, 177, 0, 1);
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.container{
+    width: 256px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+}
+
+.write{
+    justify-self: center;
+    border-radius: 50px;
+    padding: 0px 12px;
+    background-color: black;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 0 60px 10px #C4FF61;
+    margin-bottom: 12px;
+}
