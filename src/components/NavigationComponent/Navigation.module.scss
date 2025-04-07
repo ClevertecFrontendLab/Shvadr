@@ -1,0 +1,47 @@
+@media(min-width: 768px) {
+    .Navcontainer{
+        justify-content: center;
+        display: flex;
+        position: absolute;
+        left: 0;
+        height: 872px;
+        width: 256px;
+        overflow: auto;
+        padding-top: 34px;
+    }
+
+    .Navcontainer:hover{
+        border-radius: 12px;
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .option{
+        padding: 0 0 0 10px !important;
+        margin: 6px 0 6px 52px;
+        border-left: #c4ff61 1px solid;
+    }
+
+    .footer{
+        position: absolute;
+        bottom: 0;
+        font-size: 12px;
+        padding-bottom: 32px;
+        padding-left: 24px;
+        width: 256px;
+    }
+
+    .text{
+        color: rgba(0, 0, 0, 0.64);
+        font-weight: 400;
+    }
+
+    .box{
+        height: 1040px;
+        width: 256px;
+        box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .btn{
+        padding: 12px 5px 12px 18px !important;
+    }
+}
