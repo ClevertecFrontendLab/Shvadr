@@ -1,0 +1,11 @@
+.main{
+    width: calc(100vw - 512px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 48px;
+}
