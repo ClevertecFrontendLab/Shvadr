@@ -22,8 +22,8 @@ function Search() {
                 <Button
                     variant='outline'
                     mr='12px'
-                    w='48px'
-                    h='48px'
+                    h={{ base: '32px', md: '48px' }}
+                    w={{ base: '32px', md: '48px' }}
                     borderColor='rgba(0, 0, 0, 0.48)'
                 >
                     <FiltersIcon color='black' />
@@ -32,30 +32,32 @@ function Search() {
                     <Input
                         placeholder='Название или ингредиент...'
                         _placeholder={{ color: '#134b00' }}
-                        w='458px'
-                        h='48px'
-                        borderColor='rgba(0, 0, 0, 0.48)'
+                        className={styles.input}
+                        w={{ base: '100%', lg: '458px' }}
+                        h={{ base: '32px', md: '48px' }}
                     />
-                    <InputRightElement mt='5px' mr='5px'>
+                    <InputRightElement
+                        mt={{ base: '-3px', md: '5px' }}
+                        mr={{ base: '0', md: '5px' }}
+                    >
                         <SearchIcon />
                     </InputRightElement>
                 </InputGroup>
             </Flex>
-            <Flex alignItems='center' mt='18px' justifyContent='space-between'>
+            <Flex
+                alignItems='center'
+                mt='18px'
+                justifyContent='space-between'
+                display={{ base: 'none', md: 'flex' }}
+            >
                 <Flex>
                     <Text fontSize='16px' fontWeight='500'>
                         Исключить мои аллергены
                     </Text>
-                    <Switch m='4px 0 0 12px' />
+                    <Switch m='4px 0 0 12px' alignSelf='center' />
                 </Flex>
                 <Box>
-                    <Select
-                        placeholder='Выберите из списка...'
-                        h='40px'
-                        w='234px'
-                        borderColor='rgba(0, 0, 0, 0.08)'
-                        color='rgba(0, 0, 0, 0.64)'
-                    >
+                    <Select placeholder='Выберите из списка...' className={styles.select}>
                         <option value='option1'>Option 1</option>
                         <option value='option2'>Option 2</option>
                         <option value='option3'>Option 3</option>
