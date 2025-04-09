@@ -19,6 +19,11 @@
     margin-right: 128px;
 }
 
+.header{
+    position: fixed;
+    width: 100vw;
+}
+
 @media(max-width: 768px) {
     .container{
         padding: 16px 36px 16px 20px;
