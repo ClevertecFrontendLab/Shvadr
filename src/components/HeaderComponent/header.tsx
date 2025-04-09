@@ -9,6 +9,8 @@ import logo from '~/assets/Group.svg';
 import name from '~/assets/yee-daa.svg';
 import styles from '~/components/HeaderComponent/header.module.scss';
 
+import { Breadcrumbs } from '../Breadcrumbs/breadcumbs';
+
 function Header() {
     return (
         <header data-test-id='header'>
@@ -17,11 +19,13 @@ function Header() {
                     <Wrap>
                         <Image src={logo} />
                         <Image src={name} className={styles.logoName} />
-                        <Box className={styles.breadcrumbs}>Тут будут хлебные крошки</Box>
+                        <Wrap display={{ base: 'none', md: 'block' }}>
+                            <Breadcrumbs />
+                        </Wrap>
                     </Wrap>
                 </span>
                 <span>
-                    <Wrap mr='80px' className={styles.user}>
+                    <Wrap mr='40px' className={styles.user}>
                         <WrapItem>
                             <Avatar
                                 size='md'

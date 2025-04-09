@@ -19,6 +19,13 @@
     }
 }
 
+@media(max-width: 991px) {
+    .container{
+        margin-top: 16px;
+        width: calc(100vw - 35vw);
+    }
+}
+
 @media(max-width: 767px) {
     .container{
         margin-top: 16px;
