@@ -13,7 +13,7 @@ import { Breadcrumbs } from '../Breadcrumbs/breadcumbs';
 
 function Header() {
     return (
-        <header data-test-id='header'>
+        <header data-test-id='header' className={styles.header}>
             <Flex justify='space-between' align='center' className={styles.container}>
                 <span>
                     <Wrap>
