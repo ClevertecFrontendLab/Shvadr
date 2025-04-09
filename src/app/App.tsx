@@ -1,16 +1,15 @@
 import { ChakraProvider } from '@chakra-ui/react';
+import { BrowserRouter } from 'react-router';
 
-import { Footer } from '~/components/FooterComponent/footer';
-import { Header } from '~/components/HeaderComponent/header';
-import { Main } from '~/components/MainComponent/mainComponent';
+import AppRoute from './rout';
 
 function App() {
     return (
         <>
             <ChakraProvider>
-                <Header />
-                <Main />
-                <Footer />
+                <BrowserRouter>
+                    <AppRoute />
+                </BrowserRouter>
             </ChakraProvider>
         </>
     );

@@ -16,9 +16,17 @@
     }
 }
 
+@media(max-width: 991px) {
+    .title{
+        text-align: center;
+        width: calc(100vw - 35vw);
+    }
+}
+
 @media(max-width: 767px) {
     .title{
         font-size: 24px;
+        width: 100%;
     }
 
     .main{
