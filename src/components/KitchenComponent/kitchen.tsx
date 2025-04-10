@@ -67,7 +67,7 @@ const Kitchen: React.FC<KitcheTextProps> = ({ kitchen }) => (
                         ))}
                     </Flex>
 
-                    <Flex flexDir='column' height='100%' justify='space-between'>
+                    <Flex flexDir='column' height='100%' w='100%' justify='space-between'>
                         {item.smallCards.map((small) => (
                             <Card className={styles.smallCard}>
                                 <CardBody padding='12px'>
