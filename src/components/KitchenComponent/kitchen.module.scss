@@ -1,0 +1,135 @@
+.title{
+    font-weight: 500;
+    font-size: 36px;
+    width: 28%;
+}
+
+.text{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.64);
+    width: 60%;
+    line-height: 150%;
+}
+
+.bigCard{
+    height: 180px;
+    width: 282px;
+    margin-right: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.bigCard:hover{
+    box-shadow: 0 2px 4px -1px rgba(32, 126, 0, 0.06), 0 4px 6px -1px rgba(32, 126, 0, 0.1);
+}
+
+.bigTitle{
+    font-weight: 500;
+    font-size: 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.bigText{
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.smallCard{
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.smallCard:hover{
+    box-shadow: 0 2px 4px -1px rgba(32, 126, 0, 0.06), 0 4px 6px -1px rgba(32, 126, 0, 0.1);
+}
+
+.smallText{
+    width: 80%;
+    font-weight: 500;
+    font-size: 18px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.green{
+    color: #2db100;
+    font-weight: 600;
+}
+
+.group{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+@media(max-width: 1279px) {
+    .bigCard{
+        width: 30vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .one{
+        flex-direction: column;
+    }
+
+    .title{
+        width: 100vw;
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .text{
+        font-size: 14px;
+        width: 91%;
+    }
+}
+
+@media(max-width: 767px) {
+    .bigCard{
+        margin-top: 0;
+        margin-bottom: 12px;
+        margin-left: 16px;
+        margin-right: 16px;
+        width: 94vw;
+    }
+
+    .smallCard{
+        margin-top: 0;
+        margin-bottom: 12px;
+        margin-left: 16px;
+        margin-right: 16px;
+        width: 94vw;
+    }
+
+    .smallText{
+        width: 60vw;
+    }
+
+    .container{
+        width: 100vw;
+        margin-bottom: 84px;
+    }
+}
+
+@media(max-width: 360px) {
+    .bigCard{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .smallCard{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
