@@ -12,7 +12,7 @@ function Footer() {
                 justify='space-around'
                 align='center'
                 className={styles.container}
-                display={{ base: 'flex', lg: 'none' }}
+                display={{ base: 'flex', xl: 'none' }}
             >
                 <Box>
                     <Flex justify='center' align='center' h='40px' className={styles.home}>
