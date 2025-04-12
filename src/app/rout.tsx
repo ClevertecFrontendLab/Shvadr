@@ -11,7 +11,7 @@ const AppRoute = () => (
         <Route element={<Const />}>
             <Route path='/' element={<MainPage />} />
             <Route path='/vegan/second-courses' element={<VeganPage />} />
-            <Route path='/juisiest' element={<JuiciestPage />} />
+            <Route path='/juiciest' element={<JuiciestPage />} />
         </Route>
         <Route path='*' element={<NotFoundPage />} />
     </Routes>

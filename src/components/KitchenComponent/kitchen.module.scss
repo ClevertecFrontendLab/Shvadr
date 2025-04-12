@@ -77,6 +77,10 @@
     .bigCard{
         width: 30vw;
     }
+    .container{
+        width: 100vw;
+        margin-bottom: 84px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -117,10 +121,7 @@
         width: 60vw;
     }
 
-    .container{
-        width: 100vw;
-        margin-bottom: 84px;
-    }
+    
 }
 
 @media(max-width: 360px) {
