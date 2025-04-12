@@ -19,7 +19,7 @@ function Header() {
                     <Wrap>
                         <Image src={logo} />
                         <Image src={name} className={styles.logoName} />
-                        <Wrap display={{ base: 'none', md: 'block' }}>
+                        <Wrap display={{ base: 'none', xl: 'block' }}>
                             <Breadcrumbs />
                         </Wrap>
                     </Wrap>
@@ -41,7 +41,7 @@ function Header() {
                             <Box fontSize='14px'>@bake_and_pie</Box>
                         </span>
                     </Wrap>
-                    <Flex align='center' display={{ base: 'flex', md: 'none' }}>
+                    <Flex align='center' display={{ base: 'flex', xl: 'none' }}>
                         <Image src={flag} />
                         <Text className={styles.text}>185</Text>
                         <Image src={friends} />

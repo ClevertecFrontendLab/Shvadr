@@ -25,19 +25,16 @@
     width: 100vw;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1279px) {
     .container{
         padding: 16px 36px 16px 20px;
     }
-
     .user{
         display: none;
     }
+}
 
-    .breadcrumbs{
-        display: none;
-    }
-
+@media(max-width: 768px) {
     .logoName{
         margin-right: 0;
     }
