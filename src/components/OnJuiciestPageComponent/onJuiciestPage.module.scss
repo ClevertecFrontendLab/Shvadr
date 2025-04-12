@@ -4,11 +4,6 @@
     }
 }
 
-.title{
-    font-size: 36px;
-    font-weight: 500;
-}
-
 .grid{
     display: grid;
     grid-template-columns: 37% 63%;
@@ -81,9 +76,6 @@
 @media(max-width: 767px) {
     .cardText{
         display: none;
-    }
-    .title{
-        font-size: 24px;
     }
     .grid{
         grid-template-columns: 55% 45%;
