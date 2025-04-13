@@ -2,9 +2,9 @@ import { Box, Button, Card, CardBody, Flex, Grid, Image, Text } from '@chakra-ui
 
 import like from '~/assets/faceIcon.svg';
 import save from '~/assets/flagIcon.svg';
-import styles from '~/components/OnJuiciestPageComponent/onJuiciestPage.module.scss';
+import styles from '~/components/OnVeganPageComponent/onVeganPage.module.scss';
 
-type JuisiestProps = {
+type VeganProps = {
     title: string;
     text: string;
     image: string;
@@ -12,18 +12,15 @@ type JuisiestProps = {
     groupIcon: string;
     likes: string;
     saved: string;
-    recomendation: boolean;
-    recName: string;
-    recImg: string;
 };
-type JuisiestTextProps = {
-    juisiest: JuisiestProps[];
+type VeganTextProps = {
+    vegan: VeganProps[];
 };
 
-const OnJuisiestPage: React.FC<JuisiestTextProps> = ({ juisiest }) => (
+const OnVeganPage: React.FC<VeganTextProps> = ({ vegan }) => (
     <Box ml='20px' mr='20px' mt='32px' mb='40px'>
         <Grid className={styles.container}>
-            {juisiest.map((item) => (
+            {vegan.map((item) => (
                 <Card mb='14px' mr={{ base: '0', md: '20px' }}>
                     <CardBody padding='0'>
                         <Box className={styles.grid}>
@@ -99,4 +96,4 @@ const OnJuisiestPage: React.FC<JuisiestTextProps> = ({ juisiest }) => (
     </Box>
 );
 
-export { OnJuisiestPage };
+export { OnVeganPage };
