@@ -1,0 +1,36 @@
+.main{
+    width: calc(100vw - 512px);
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 48px;
+}
+
+@media(max-width: 1279px) {
+    .main{
+        width: 100vw;
+    }
+}
+
+@media(max-width: 1040px) {
+    .title{
+        font-size: 33px;
+    }
+}
+
+@media(max-width: 991px) {
+    .title{
+        text-align: center;
+        width: calc(100vw - 35vw);
+    }
+}
+
+@media(max-width: 767px) {
+    .title{
+        font-size: 24px;
+        width: 100%;
+    }
+}

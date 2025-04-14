@@ -1,0 +1,17 @@
+.container{
+    background-color: rgba(255, 255, 211, 1);
+    height: 84px;
+    position: fixed; 
+    bottom: 0;
+    width: 100vw;
+}
+
+.home{
+    justify-self: center;
+    border-radius: 50px;
+    padding: 0px 12px;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 20px 4px #C4FF61;
+}
