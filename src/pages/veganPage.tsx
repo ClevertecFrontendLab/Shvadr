@@ -30,8 +30,8 @@ export const VeganPage = () => (
                     <Search />
                     <TabsC tab={TABS} />
                     <OnVeganPage vegan={VEGANPAGE} />
+                    <Kitchen kitchen={BAKE} />
                 </Flex>
-                <Kitchen kitchen={BAKE} />
             </Flex>
         </Flex>
     </div>

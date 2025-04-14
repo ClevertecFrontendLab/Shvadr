@@ -1,4 +1,4 @@
-import { Button, Card, CardBody, Flex, Grid, Image, Text } from '@chakra-ui/react';
+import { Box, Button, Card, CardBody, Flex, Grid, Image, Text } from '@chakra-ui/react';
 
 import like from '~/assets/faceIcon.svg';
 import save from '~/assets/flagIcon.svg';
@@ -25,7 +25,7 @@ type KitcheTextProps = {
 };
 
 const Kitchen: React.FC<KitcheTextProps> = ({ kitchen }) => (
-    <div>
+    <Box width={{ base: '100%', xl: '94%' }}>
         {kitchen.map((item) => (
             <Grid className={styles.container}>
                 <Flex
@@ -104,7 +104,7 @@ const Kitchen: React.FC<KitcheTextProps> = ({ kitchen }) => (
                 </Flex>
             </Grid>
         ))}
-    </div>
+    </Box>
 );
 
 export { Kitchen };

@@ -18,7 +18,7 @@ const Blogs: React.FC<BlogsTextProps> = ({ blogs }) => (
     <Box
         backgroundColor='#c4ff61'
         borderRadius='16px'
-        p={{ base: '12px', md: '24px' }}
+        p={{ base: '12px', lg: '24px' }}
         m='35px 20px'
     >
         <Flex align='center' justify='space-between' mb='20px'>

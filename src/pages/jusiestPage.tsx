@@ -16,8 +16,8 @@ export const JuiciestPage = () => (
                     <div className={styles.title}>Самое сочное</div>
                     <Search />
                     <OnJuisiestPage juisiest={JUISIESTPAGE} />
+                    <Kitchen kitchen={VEGAN} />
                 </Flex>
-                <Kitchen kitchen={VEGAN} />
             </Flex>
         </Flex>
     </div>

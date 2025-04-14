@@ -24,8 +24,8 @@ export const MainPage = () => (
                     <Carousel carousel={CAROUSEL} />
                     <Juisiest juisiest={JUISIEST} />
                     <Blogs blogs={BLOGS} />
+                    <Kitchen kitchen={VEGAN} />
                 </Flex>
-                <Kitchen kitchen={VEGAN} />
             </Flex>
         </Flex>
     </div>
