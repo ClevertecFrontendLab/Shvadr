@@ -1,10 +1,12 @@
 /* import { useNavigate } from "react-router"; */
 import { Flex } from '@chakra-ui/react';
 
+import { Blogs } from '~/components/BlogsComponent/blogs';
 import { Carousel } from '~/components/CarouselComponent/carousel';
 import { Juisiest } from '~/components/JuisiestComponent/juisiest';
 import { Kitchen } from '~/components/KitchenComponent/kitchen';
 import { Search } from '~/components/SearchComponent/search';
+import { BLOGS } from '~/constants/blogs';
 import { CAROUSEL } from '~/constants/carousel';
 import { JUISIEST } from '~/constants/juisiest';
 import { VEGAN } from '~/constants/kitchen';
@@ -21,6 +23,7 @@ export const MainPage = () => (
                     <Search />
                     <Carousel carousel={CAROUSEL} />
                     <Juisiest juisiest={JUISIEST} />
+                    <Blogs blogs={BLOGS} />
                 </Flex>
                 <Kitchen kitchen={VEGAN} />
             </Flex>
