@@ -25,7 +25,7 @@ type KitcheTextProps = {
 };
 
 const Kitchen: React.FC<KitcheTextProps> = ({ kitchen }) => (
-    <Box width={{ base: '100%', xl: '94%' }}>
+    <Box width={{ base: 'auto', xl: '94%' }}>
         {kitchen.map((item) => (
             <Grid className={styles.container}>
                 <Flex

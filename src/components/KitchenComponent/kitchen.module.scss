@@ -85,29 +85,22 @@
     .container{
         width: 96vw;
         margin-bottom: 84px;
-        margin-left: 24px;
     }
 }
 
 @media(max-width: 768px) {
-    .container{
-        margin-left: 0;
-    }
     .one{
         flex-direction: column;
     }
 
     .title{
-        width: 100vw;
         font-size: 24px;
         margin-bottom: 12px;
-        margin-left: 24px;
     }
 
     .text{
         font-size: 14px;
         width: 91%;
-        margin-left: 24px;
     }
 }
 
@@ -136,10 +129,6 @@
 }
 
 @media(max-width: 360px) {
-    .text,
-    .title{
-        margin-left: 0;
-    }
     .container{
         margin-left: 12px;
     }
