@@ -36,10 +36,26 @@ const OnJuisiestPage: React.FC<JuisiestTextProps> = ({ juisiest }) => (
                                     width='100%'
                                 />
                             </Flex>
+                            {item.recomendation && (
+                                <Flex
+                                    pos='absolute'
+                                    bottom='20px'
+                                    left='10px'
+                                    backgroundColor='#d7ff94'
+                                    borderRadius='4px'
+                                    p='2px 8px'
+                                    display={{ base: 'none', xl: 'flex' }}
+                                >
+                                    <Image src={item.recImg} />
+                                    <Text fontSize='14px' ml='8px'>
+                                        {item.recName} рекомендует
+                                    </Text>
+                                </Flex>
+                            )}
                             <Flex
                                 flexDir='column'
                                 justify='space-between'
-                                p={{ base: '10px 5px', md: '20px 24px' }}
+                                p={{ base: '8px', lg: '20px 24px' }}
                             >
                                 <Flex justify='space-between' align='center'>
                                     <Flex className={styles.group}>

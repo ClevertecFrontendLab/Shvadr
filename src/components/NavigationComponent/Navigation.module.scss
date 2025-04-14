@@ -1,16 +1,16 @@
 @media(min-width: 768px) {
-    .Navcontainer{
-        justify-content: center;
+    .accordion{
         display: flex;
+        flex-direction: column;
         position: fixed;
         top: 84px;
         left: 0;
         max-height: 480px;
         width: 256px;
-        overflow: auto;
+        overflow-y: auto !important;
     }
 
-    .Navcontainer:hover{
+    .accordion:hover{
         border-radius: 12px;
         box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
