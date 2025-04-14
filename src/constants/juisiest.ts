@@ -21,7 +21,7 @@ export const JUISIEST = [
         saved: '159',
         recomendation: true,
         recName: 'Елена Высоцкая',
-        recImg: '/src/assets/Elena.png',
+        recImg: '/src/assets/Elena.svg',
     },
     {
         title: 'Лапша с курицей и шафраном',
@@ -33,7 +33,7 @@ export const JUISIEST = [
         saved: '258',
         recomendation: true,
         recName: 'Alex Cook',
-        recImg: '/src/assets/Alex.png',
+        recImg: '/src/assets/Alex.svg',
     },
     {
         title: 'Том-ям с капустой кимчи',
@@ -60,7 +60,7 @@ export const JUISIESTPAGE = [
         saved: '258',
         recomendation: true,
         recName: 'Alex Cook',
-        recImg: '/src/assets/Alex.png',
+        recImg: '/src/assets/Alex.svg',
     },
     {
         title: 'Том-ям с капустой кимчи',
@@ -84,7 +84,7 @@ export const JUISIESTPAGE = [
         saved: '159',
         recomendation: true,
         recName: 'Елена Высоцкая',
-        recImg: '/src/assets/Elena.png',
+        recImg: '/src/assets/Elena.svg',
     },
     {
         title: 'Кнели со спагетти',

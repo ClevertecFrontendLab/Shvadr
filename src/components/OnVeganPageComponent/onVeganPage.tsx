@@ -36,7 +36,7 @@ const OnVeganPage: React.FC<VeganTextProps> = ({ vegan }) => (
                             <Flex
                                 flexDir='column'
                                 justify='space-between'
-                                p={{ base: '10px 5px', md: '20px 24px' }}
+                                p={{ base: '8px', lg: '20px 24px' }}
                             >
                                 <Flex justify='space-between' align='center'>
                                     <Flex className={styles.group}>

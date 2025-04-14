@@ -34,8 +34,22 @@ const Navigation: React.FC<NavTextProps> = ({ navigation }) => {
 
     return (
         <Box className={styles.box} display={{ base: 'none', md: 'block' }} pos='fixed' left='0'>
-            <nav className={styles.Navcontainer}>
-                <Accordion w='230px' allowToggle>
+            <nav>
+                <Accordion
+                    sx={{
+                        '&::-webkit-scrollbar': {
+                            width: '6px',
+                            borderRadius: '8px',
+                            backgroundColor: `rgba(0, 0, 0, 0.04)`,
+                        },
+                        '&::-webkit-scrollbar-thumb': {
+                            backgroundColor: `rgba(0, 0, 0, 0.16)`,
+                            borderRadius: '8px',
+                        },
+                    }}
+                    className={styles.accordion}
+                    allowToggle
+                >
                     {navigation.map((navItem) => (
                         <AccordionItem border='none'>
                             <h2>
