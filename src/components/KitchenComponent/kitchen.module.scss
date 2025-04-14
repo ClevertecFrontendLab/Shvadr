@@ -96,6 +96,7 @@
     .title{
         font-size: 24px;
         margin-bottom: 12px;
+        width: fit-content;
     }
 
     .text{
@@ -124,8 +125,6 @@
     .smallText{
         width: 60vw;
     }
-
-    
 }
 
 @media(max-width: 360px) {
