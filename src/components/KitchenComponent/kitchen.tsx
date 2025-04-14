@@ -40,12 +40,16 @@ const Kitchen: React.FC<KitcheTextProps> = ({ kitchen }) => (
                 <Flex flexDirection={{ base: 'column', md: 'row' }}>
                     <Flex flexDirection={{ base: 'column', md: 'row' }}>
                         {item.bigCards.map((big) => (
-                            <Card className={styles.bigCard}>
+                            <Card
+                                className={styles.bigCard}
+                                borderTop='1px solid rgba(0, 0, 0, 0.08)'
+                                borderRadius='8px'
+                            >
                                 <CardBody padding='16px'>
                                     <Text className={styles.bigTitle}>{big.title}</Text>
                                     <Text className={styles.bigText}>{big.text}</Text>
                                     <Flex mt='24px' justify='space-between'>
-                                        <Flex backgroundColor='#ffffd3' borderRadius='4px'>
+                                        <Flex backgroundColor='#ffffd3' borderRadius='6px'>
                                             <Image src={big.groupIcon} mr='8px' ml='8px' />
                                             <Text mr='8px' className={styles.group}>
                                                 {big.group}
@@ -69,7 +73,11 @@ const Kitchen: React.FC<KitcheTextProps> = ({ kitchen }) => (
 
                     <Flex flexDir='column' height='100%' w='100%' justify='space-between'>
                         {item.smallCards.map((small) => (
-                            <Card className={styles.smallCard}>
+                            <Card
+                                className={styles.smallCard}
+                                borderTop='1px solid rgba(0, 0, 0, 0.08)'
+                                borderRadius='8px'
+                            >
                                 <CardBody padding='12px'>
                                     <Flex justify='space-between'>
                                         <Flex>
@@ -84,6 +92,7 @@ const Kitchen: React.FC<KitcheTextProps> = ({ kitchen }) => (
                                             h='24px'
                                             maxW='70px'
                                             minW='70px'
+                                            fontSize='12px'
                                         >
                                             Готовить
                                         </Button>

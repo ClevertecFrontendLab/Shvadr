@@ -73,7 +73,13 @@ const Carousel: React.FC<CarouselTextProps> = ({ carousel }) => {
                 }}
             >
                 {carousel.map((item) => (
-                    <Card ml='12px' minW={{ base: '160px', md: '300px' }} className={styles.card}>
+                    <Card
+                        ml='12px'
+                        minW={{ base: '160px', md: '300px' }}
+                        className={styles.card}
+                        borderBottom='1px solid rgba(0, 0, 0, 0.08)'
+                        borderRadius='8px'
+                    >
                         <CardBody padding='0'>
                             <Box>
                                 <Flex>

@@ -10,8 +10,8 @@ type TabsTextProps = {
 };
 
 const TabsC: React.FC<TabsTextProps> = ({ tab }) => (
-    <Box width='100%' mt='36px'>
-        <Tabs colorScheme='green' defaultIndex={2}>
+    <Box width='100%' mt='36px' display='flex' justifyContent='center'>
+        <Tabs colorScheme='green' defaultIndex={2} ml='24px'>
             <Box className={styles.box}>
                 <TabList width='fit-content'>
                     {tab.map((item) => (
@@ -20,6 +20,7 @@ const TabsC: React.FC<TabsTextProps> = ({ tab }) => (
                                 width='max-content'
                                 fontWeight='500'
                                 color='#134b00'
+                                fontSize='16px'
                                 _selected={{
                                     color: '#2db100',
                                     borderColor: '#2db100',
